@@ -1,7 +1,28 @@
+import Hero from "./components/hero/Hero";
+import Portfolio from "./components/portfolio/Portfolio";
+import Services from "./components/services/Services";
+import Contact from "./components/contact/Contact";
+import Test from "./components/Test";
+
 const App = () => {
   return (
-    <div className=''>Hello World</div>
-  )
-}
+    <div className="container">
+      <section id="#home">
+        <Hero />
+      </section>
+      <section id="#services">
+        <Services />
+      </section>
+      <section id="#portfolio">
+        <Portfolio />
+      </section>
+      <section id="#contact">
+        <Contact />
+      </section>
 
-export default App
+      
+    </div>
+  );
+};
+
+export default App;
