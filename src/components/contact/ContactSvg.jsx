@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { SortUtils } from "three/examples/jsm/Addons.js";
 
 const ContactSvg = () => {
   return (
@@ -481,7 +482,7 @@ const ContactSvg = () => {
         transform="translate(-266.62966 -85.37299)"
         fill="#2f2e41"
       />
-      <path
+      <path 
         d="M319.34008,400.16455l3.19.12c-.01-.93006.33-2.64-.23-3.57a1.30821,1.30821,0,0,0-1.2-.63,1.40491,1.40491,0,0,0-.93.23C319.15008,396.99451,319.44012,399.10449,319.34008,400.16455Z"
         transform="translate(-266.62966 -85.37299)"
         fill="#2f2e41"
@@ -490,4 +491,8 @@ const ContactSvg = () => {
   );
 };
 
-export default ContactSvg;
+export default ContactSvg; 
+
+
+
+

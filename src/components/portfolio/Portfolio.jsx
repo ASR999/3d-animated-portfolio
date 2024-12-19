@@ -5,37 +5,49 @@ import { motion, useInView, useScroll, useTransform } from "motion/react";
 const items = [
   {
     id: 1,
-    img: "/p1.jpg",
-    title: "Full Stack Blog Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/p11.jpg",
+    title: "FeedFlux - Anonymous feedback website",
+    desc: ` Built an anonymous feedback website with Next.js, allowing users to provide and receive feedback anonymously. It features AI-powered suggestions that assist users in crafting clear and constructive feedback by generating real-time writing prompts as they type. The platform offers a user-friendly interface, and ensures fast performance through server-side rendering. \n
+    Technologies Used: Next.js, React, Zod, Tailwind CSS, NextAuth, Mongoose, Axios, bcrypt, TypeScript.
+
+    `
+,
+    link: "https://github.com/ASR999/FeedFlux",
   },
   {
     id: 2,
-    img: "/p2.jpg",
-    title: "School Management System",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/p22.jpg",
+    title: "HomeWise - Real Estate listing",
+    desc: `Developed a real estate viewing website built with the MERN stack. It allows users to
+browse and search property listings, schedule viewings, and save favorites. The platform
+features advanced search filters and an admin dashboard for managing listings. With a
+responsive design, it provides a user-friendly experience for both buyers and real estate
+agents, simplifying the property search process. 
+Technologies Used: React.js, Node.js, JavaScript,Express.js, HTML, Tailwind
+CSS, JWT, bcrypt,MongoDB, Mongoose,Redux,Firebase.`,
+    link: "https://github.com/ASR999/HomeWise",
   },
   {
     id: 3,
-    img: "/p3.jpg",
-    title: "Real-time Chat Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/p33.jpg",
+    title: "InsightPdf",
+    desc: `The PDF Interaction Software website aims to provide users with a comprehensive platform
+for interacting with, modifying, and analyzing PDF documents. Key features include interactive tools for highlighting and annotating, modification capabilities like converting files, a
+summarizing feature that condenses PDF content into concise overviews, and an interactive
+question-and-answer functionality where users can ask questions related to the PDF content,
+and the application provides answers.
+Technologies Used: React.js, Node.js, JavaScript, Tailwind CSS, HTML, Stripe,
+Zod, Prisma.
+
+`,
+    link: "https://github.com/ASR999/InsightPdf",
   },
+  
   {
     id: 4,
-    img: "/p4.jpg",
-    title: "Social Media Project",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
-  },
-  {
-    id: 5,
-    img: "/p5.jpg",
+    img: "/p55.jpg",
     title: "Animated Portfolio Website",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
+    desc: "Portfolio Website using React.js.",
     link: "/",
   },
 ];

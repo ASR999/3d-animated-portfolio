@@ -42,19 +42,19 @@ const services = [
     id: 1,
     img: "/service1.png",
     title: "Web Development",
-    counter: 35,
+    
   },
   {
     id: 2,
     img: "/service2.png",
     title: "Product Design",
-    counter: 23,
+    
   },
   {
     id: 3,
     img: "/service3.png",
-    title: "Branding",
-    counter: 46,
+    title: "Database Management",
+    
   },
 ];
 
@@ -89,15 +89,12 @@ const Services = () => {
               </div>
               <div className="serviceInfo">
                 <h2>{service.title}</h2>
-                <h3>{service.counter} Projects</h3>
+                <h3>{service.counter} </h3>
               </div>
             </motion.div>
           ))}
         </motion.div>
-        <div className="counterList">
-          <Counter from={0} to={104} text="Projects Completed" />
-          <Counter from={0} to={72} text="Happy Clients" />
-        </div>
+       
       </div>
       <div className="sSection right">
         {currentServiceId === 1 ? (

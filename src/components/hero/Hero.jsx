@@ -4,6 +4,10 @@ import Speech from "./Speech";
 import { motion } from "motion/react";
 import Shape from "./Shape";
 import { Suspense } from "react";
+import githubDark from '../../../public/github-dark.svg';
+import linkedinDark from '../../assets/linkedin-dark.svg';
+import leetcodeblack from '../../assets/leetcode.svg'
+import Resume from '../../assets/Resume 2024.pdf'
 
 const awardVariants = {
   initial: {
@@ -54,16 +58,9 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
-          <motion.h2 variants={awardVariants}>Top rated designers</motion.h2>
-          <motion.p variants={awardVariants}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
-            a!
-          </motion.p>
-          <motion.div variants={awardVariants} className="awardList">
-            <motion.img variants={awardVariants} src="/award1.png" alt="" />
-            <motion.img variants={awardVariants} src="/award2.png" alt="" />
-            <motion.img variants={awardVariants} src="/award3.png" alt="" />
-          </motion.div>
+          <motion.h2 variants={awardVariants}>FULL STACK DEVELOPER</motion.h2>
+          
+          
         </motion.div>
 
         <motion.a
@@ -76,6 +73,8 @@ const Hero = () => {
           href="#services"
           className="scroll"
         >
+          
+          
           <svg
             width="50px"
             height="50px"
@@ -101,6 +100,8 @@ const Hero = () => {
               strokeLinecap="round"
             />
           </svg>
+          
+          
         </motion.a>
       </div>
 
@@ -113,17 +114,23 @@ const Hero = () => {
           className="follow"
         >
           <motion.a variants={followVariants} href="/">
-            <img src="/instagram.png" alt="" />
+            <a href="https://github.com/ASR999" target='_blank'>
+                <img src={githubDark} alt="Github" />
+            </a>
           </motion.a>
           <motion.a variants={followVariants} href="/">
-            <img src="/facebook.png" alt="" />
+            <a href="https://www.linkedin.com/in/ayushsrawat/" target='_blank'>
+                <img src={linkedinDark} alt="LinkedIn" />
+            </a>
           </motion.a>
           <motion.a variants={followVariants} href="/">
-            <img src="/youtube.png" alt="" />
+          <a  href="https://leetcode.com/u/Raiden_Asr/" target='_blank'>
+                <img  src={leetcodeblack} alt="Twitter" />
+            </a>
           </motion.a>
 
           <motion.div variants={followVariants} className="followTextContainer">
-            <div className="followText"> FOLLOW ME</div>
+            <div className="followText">PROFILE</div>
           </motion.div>
         </motion.div>
 
@@ -131,7 +138,7 @@ const Hero = () => {
         <Speech />
 
         {/* Certficate */}
-        <motion.div
+        {/* <motion.div
           animate={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
           className="certificate"
@@ -142,10 +149,11 @@ const Hero = () => {
           PROFESSIONAL
           <br />
           UI DESIGNER
-        </motion.div>
+        </motion.div> */}
+
 
         <motion.a
-          href="/#contact"
+          href={Resume} download
           className="contactLink"
           animate={{
             x: [200, 0],
@@ -163,18 +171,18 @@ const Hero = () => {
               ease: "linear",
             }}>
             <svg viewBox="0 0 200 200" width="150" height="150">
-              <circle cx="100" cy="100" r="90" fill="pink" />
+              <circle cx="100" cy="100" r="90" fill="rgb(22, 255, 224)" />
               <path
                 id="innerCirclePath"
                 fill="none"
                 d="M 100,100 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"
               />
               <text className="circleText">
-                <textPath href="#innerCirclePath">Hire Now •</textPath>
+                <textPath href="#innerCirclePath">RESUME•</textPath>
               </text>
               <text className="circleText">
                 <textPath href="#innerCirclePath" startOffset="44%">
-                  Contact Me •
+                  RESUME •
                 </textPath>
               </text>
             </svg>
@@ -200,11 +208,11 @@ const Hero = () => {
         {/* 3d */}
         <Canvas>
           <Suspense fallback="loading...">
-            <Shape />
+            {/* <Shape /> */}
           </Suspense>
         </Canvas>
         <div className="hImg">
-          <img src="/wallpurewhite.png" alt="" />
+          <img src="/wall.png" alt="" />
         </div>
       </div>
     </div>

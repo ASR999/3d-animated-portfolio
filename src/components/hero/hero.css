@@ -42,7 +42,7 @@
 .hTitle {
   margin-top: 50px;
   font-size: 100px;
-  color: pink;
+  color: rgb(22, 255, 224);
 }
 
 .hTitle span {
@@ -62,6 +62,7 @@
 .awardList {
   display: flex;
   gap: 8px;
+  margin-top: 10px;
 }
 
 .awardList img {
@@ -104,6 +105,7 @@
   background-color: #dd4c62;
   font-size: 12px;
   rotate: 90deg;
+  letter-spacing: 0.2cap;
   width: max-content;
   height: 100%;
   transform-origin: left top;
@@ -115,6 +117,7 @@
 }
 
 .bubbleContainer {
+  margin-top: 60px;
   width: 50%;
   display: flex;
   align-items: end;
@@ -124,8 +127,8 @@
 
 .bubble {
   width: 100%;
-  height: 100px;
-  background-color: white;
+  height: 120px;
+  background-color:rgb(255, 255, 255);
   color: #555;
   padding: 24px;
   font-size: 18px;
