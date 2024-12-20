@@ -65,6 +65,7 @@
   .pImg {
     width: 40%;
     border-radius: 20px;
+    height: 350px;
     overflow: hidden;
   }
   
@@ -90,7 +91,7 @@
   }
   
   .pText button {
-    background-color: pink;
+    background-color: rgb(72, 253, 208);
     padding: 12px;
     border-radius: 10px;
     border: none;

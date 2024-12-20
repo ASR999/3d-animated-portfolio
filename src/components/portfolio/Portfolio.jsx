@@ -137,7 +137,7 @@ const Portfolio = () => {
     };
 
     calculateDistance();
-
+    
     window.addEventListener("resize", calculateDistance);
 
     return () => {
